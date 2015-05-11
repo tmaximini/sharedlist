@@ -1,0 +1,24 @@
+<template name="items">
+
+  <div class="container">
+
+    <h2>Items</h2>
+
+    <form class="new-list-item">
+      <input type="text" name="title" placeholder="new item">
+      <input type="submit">
+    </form>
+
+    <ul class="items">
+      {{#each listItems}}
+        <h3>{{ > item}}</h3>
+      {{/each}}
+    </ul>
+
+  </div> <!-- /container -->
+
+</template>
+
+<template name="item">
+  <li>{{title}}</li>
+</template>

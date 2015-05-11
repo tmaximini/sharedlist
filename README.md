@@ -1,0 +1,1 @@
+# A simple Meteor list app

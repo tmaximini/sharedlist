@@ -5,14 +5,14 @@
     <h2>Items</h2>
 
     <form class="new-list-item">
-      <input type="text" name="title" placeholder="new item">
-      <input type="submit">
+      	<input type="text" name="title" placeholder="new item">
+      	<input type="submit">
     </form>
 
     <ul class="items">
-      {{#each listItems}}
-        <h3>{{ > item}}</h3>
-      {{/each}}
+      	{{#each listItems}}
+        	<h3>{{ > item}}</h3>
+      	{{/each}}
     </ul>
 
   </div> <!-- /container -->
@@ -20,5 +20,11 @@
 </template>
 
 <template name="item">
-  <li>{{title}}</li>
+  	<li class="{{#if checked}}checked{{/if}}">
+  		<div class="item">
+  			<input type="checkbox" checked="{{checked}}">
+  			<span class="title">{{title}}</span>
+  			<button class="delete">delete</button>
+  		</div>
+  	</li>
 </template>

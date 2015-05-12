@@ -1,6 +1,59 @@
-* {
+html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: #DE4F4F;
+  color: #FFF;
+  font-size: 1em;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 20px 15px;
+  border-bottom: #eee solid 1px;
+}
+
+li .text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .title {
+  text-decoration: line-through;
 }

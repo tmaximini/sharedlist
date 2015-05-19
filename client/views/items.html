@@ -2,11 +2,14 @@
 
   <div class="container">
 
-    <h2>Items</h2>
+    <h1>Todos</h1>
 
     <form class="new-list-item">
-      	<input type="text" name="title" placeholder="new item">
-      	<input type="submit">
+    		<div class="form-group">
+    			<label for="new-item">Add a todo</label>
+      		<input class="form-control" id="new-item" type="text" name="title" placeholder="new item">
+      		<input class="btn btn-success form-control submit-button" type="submit">
+      	</div>
     </form>
 
     <ul class="items">
@@ -22,9 +25,12 @@
 <template name="item">
   	<li class="{{#if checked}}checked{{/if}}">
   		<div class="item">
-  			<input type="checkbox" checked="{{checked}}">
-  			<span class="title">{{title}}</span>
-  			<button class="delete">delete</button>
+  			<div class="checkbox">
+  			  <label>
+  			    <input type="checkbox"> <span class="title">{{title}}</span>
+  			  </label>
+  			  <button class="btn btn-danger delete-button">delete</button>
+  			</div>
   		</div>
   	</li>
 </template>

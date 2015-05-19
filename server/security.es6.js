@@ -6,7 +6,6 @@ ListItems.allow({
 		return true;
 	},
 	'remove': (userId, doc) => {
-		console.log('this: ', this);
 		return true;
 	}
 });

@@ -2,3 +2,4 @@ standard-app-packages
 iron:router
 fourseven:scss
 grigio:babel
+twbs:bootstrap
